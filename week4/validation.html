@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Form Validation</title>
+  <script>
+    function validateForm() {
+      let name = document.getElementById("name").value.trim();
+      let email = document.getElementById("email").value.trim();
+      let pwd = document.getElementById("password").value.trim();
+      let phone = document.getElementById("phone").value.trim();
+
+      //name validation
+      if (name === "") {
+        alert("Please enter your name");
+        return false;
+      }
+
+      // Email validation
+      let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      if (!email.match(emailPattern)) {
+        alert("Enter a valid email address");
+        return false;
+      }
+
+      // Password validation
+      if (pwd.length < 6) {
+        alert("Password must be at least 6 characters");
+        return false;
+      }
+ 
+      // Phone validation
+      let phonePattern = /^[0-9]{10}$/;
+      if (!phone.match(phonePattern)) {
+        alert("Enter a valid 10-digit phone number");
+        return false;
+      }
+
+      alert("Form submitted successfully!");
+      return true;
+    }
+  </script>
+</head>
+<body>
+  <h2>Registration Form</h2>
+  <form onsubmit="return validateForm()">
+    Name: <input type="text" id="name"><br><br>
+    Email: <input type="text" id="email"><br><br>
+    Password: <input type="password" id="password"><br><br>
+    Phone: <input type="text" id="phone"><br><br>
+    <input type="submit" value="Register">
+  </form>
+</body>
+</html>

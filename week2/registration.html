@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Registration Form</title>
+</head>
+<body bgcolor="gray">
+  <center>
+    <h2>Student Registration Form</h2>
+
+    <form action="register_success.html" method="post">
+
+      <label>Full Name:</label><br>
+      <input type="text" name="fullname" required><br><br>
+
+      <label>Age:</label><br>
+      <input type="number" name="age" required><br><br>
+
+      <label>Gender:</label><br>
+      <input type="radio" name="gender" value="Male"> Male
+      <input type="radio" name="gender" value="Female"> Female
+      <input type="radio" name="gender" value="Other"> Other<br><br>
+
+      <label>Department:</label><br>
+      <select name=":dept" required>
+        <option value="">--select--</option>
+        <option value="Computer Science">Computer Science</option>
+        <option value="ECE">ECE</option>
+        <option value="IT">IT</option>
+
+      </select><br><br>
+
+      <label>Courses Interested:</label><br>
+      <input type="checkbox" name="course" value="AI"> AI
+      <input type="checkbox" name="course" value="ML"> ML
+      <input type="checkbox" name="course" value="Web Development"> Web Development
+      <input type="checkbox" name="course" value="Data Science"> Data Science<br><br>
+
+      <label>Email:</label><br>
+      <input type="email" name="email" required><br><br>
+
+      <label>Phone Number:</label><br>
+      <input type="tel" name="phone" required><br><br>
+
+      <label>Address:</label><br>
+      <textarea name="address" required></textarea><br><br>
+
+      <input type="submit" value="Register">
+      <input type="reset" value="Clear">
+
+    </form>
+  </center>
+</body>
+</html>
