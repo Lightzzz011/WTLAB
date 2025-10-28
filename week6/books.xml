@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookstore SYSTEM "books.dtd">
+<bookstore>
+<book>
+<title>Learn</title>
+<author>Me</author>
+<year>2020</year>
+<price>300</price>
+</book>
+<book>
+<title>Play</title>
+<author>You</author>
+<year>2010</year>
+<price>200</price>
+</book>
+</bookstore>
