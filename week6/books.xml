@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE bookstore SYSTEM "books.dtd">
 <bookstore>
-<book>
+<book category="edu">
 <title>Learn</title>
-<author>Me</author>
+<author nickname="bob">Me</author>
 <year>2020</year>
 <price>300</price>
 </book>
