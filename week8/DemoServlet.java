@@ -3,10 +3,11 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 
 public class DemoServlet extends HttpServlet {
-    public void doGet(HttpServletRequest request, HttpServletResponse Response) throws ServletException, IoException {
+    public void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
 
-        response.setContentTType("text/html");
-        PrintWriter out=response.getWriter();
+        response.setContentType("text/html");
+        PrintWriter out = response.getWriter();
 
         out.println("<html><body>");
         out.println("<h1>Hello World!</h1>");

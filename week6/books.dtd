@@ -6,4 +6,3 @@
 <!ATTLIST author nickname CDATA #IMPLIED>
 <!ELEMENT year(#PCDATA)>
 <!ELEMENT price(#PCDATA)>
-
